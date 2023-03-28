@@ -12,7 +12,7 @@ with open("./facts.txt", "r") as f:
     facts = f.readlines()
 
 
-@app.get("/:id")
+@app.get("/{id}")
 def read_root(id: int):
     '''
     Fact about snakes
