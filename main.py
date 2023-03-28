@@ -16,4 +16,4 @@ def read_root():
     '''
     Free random fact about snakes
     '''
-    return {"fact": facts[random.randint(0, len(facts) - 1)]}
+    return {"fact": facts[random.randint(0, len(facts) - 1)].strip()}
