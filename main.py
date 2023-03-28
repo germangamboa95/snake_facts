@@ -13,7 +13,7 @@ with open("./facts.txt", "r") as f:
 
 
 @app.get("/{id}")
-def read_root(id: int):
+def get_fact_by_id(id: int):
     '''
     Fact about snakes
     '''
@@ -21,7 +21,7 @@ def read_root(id: int):
 
 
 @app.get("/random")
-def get_random():
+def get_random_fact():
     '''
     Free random fact about snakes
     '''
